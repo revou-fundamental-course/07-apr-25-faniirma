@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="asset/pt.png" alt="Logo Perusahaan" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profile.html">Profil Kami</a></li>
+          <li><a href="portofolio.html">Portfolio</a></li>
+          <li><a href="infor.html">Informasi</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content" data-aos="fade-up">
+        <h1>
+          Selamat Datang di <span class="highlight">PT Solusi Digital</span>
+        </h1>
+        <p>
+          Kami menciptakan solusi teknologi yang mengubah ide menjadi kenyataan.
+          Mari tumbuh bersama kami!
+        </p>
+      </div>
+      <img
+        src="asset/p2.jpg"
+        alt="Hero Image"
+        id="heroImage"
+        class="hero-image"
+      />
+    </section>
+
+    <!-- Headquarters Section -->
+
+    <section class="headquarters">
+      <h2 class="section-title">Kantor Pusat Kami</h2>
+      <p class="section-subtitle">
+        Lokasi strategis untuk menjangkau Anda lebih dekat
+      </p>
+
+      <div class="hq-wrapper">
+        <div class="hq-map-box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3108938436515!2d106.82283707592135!3d-6.219099860831248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1578e2f76f5%3A0x9aaf7f6b4dfb5e92!2sJakarta!5e0!3m2!1sen!2sid!4v1615790800431!5m2!1sen!2sid"
+            width="100%"
+            height="300"
+            style="border: 0; border-radius: 16px"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="hq-info-box">
+          <div class="hq-card">
+            <h3>Alamat Kantor Pusat</h3>
+            <p>Jl. Inovasi No. 123, Jakarta Selatan, DKI Jakarta</p>
+          </div>
+          <div class="hq-card">
+            <h3>Cabang Surabaya</h3>
+            <p>Jl. Kreatif No. 45, Surabaya, Jawa Timur</p>
+          </div>
+          <div class="hq-card">
+            <h3>Cabang Bandung</h3>
+            <p>Jl. Teknologi No. 78, Bandung, Jawa Barat</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <h2>Layanan Kami</h2>
+      <p class="section-desc">
+        Kami menyediakan solusi digital inovatif untuk mendukung pertumbuhan
+        bisnis Anda.
+      </p>
+
+      <div class="service-list">
+        <div class="service-card">
+          <img src="asset/p1.jpg" alt="Layanan 1" />
+          <h3>Pembuatan Website</h3>
+          <p>
+            Kami membangun website profesional yang responsif dan menarik untuk
+            berbagai kebutuhan bisnis.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="asset/p2.jpg" alt="Layanan 2" />
+          <h3>Aplikasi Mobile</h3>
+          <p>
+            Tim kami mengembangkan aplikasi Android & iOS dengan performa tinggi
+            dan desain user-friendly.
+          </p>
+        </div>
+        <div class="service-card">
+          <img src="asset/p2.jpg" alt="Layanan 3" />
+          <h3>Desain Grafis</h3>
+          <p>
+            Dari logo hingga branding, kami bantu tampil beda dengan desain
+            visual yang kuat dan konsisten.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <h2>Testimoni Pelanggan</h2>
+      <p class="section-desc">Apa kata mereka tentang layanan kami?</p>
+
+      <div class="testimonial-slider">
+        <div class="testimonial-card">
+          <img src="asset/o2.jpg" alt="Klien 1" />
+          <p>
+            "Pelayanan sangat memuaskan, website kami tampil profesional dan
+            modern!"
+          </p>
+          <h4>- Budi, CEO TechnoID</h4>
+        </div>
+        <div class="testimonial-card">
+          <img src="asset/o1.jpg" alt="Klien 2" />
+          <p>
+            "Aplikasinya ringan dan desainnya keren. Tim sangat komunikatif!"
+          </p>
+          <h4>- Sari, Owner SariMart</h4>
+        </div>
+        <div class="testimonial-card">
+          <img src="asset/o3.jpg" alt="Klien 3" />
+          <p>
+            "Sangat merekomendasikan! Proyek selesai tepat waktu dan hasilnya
+            luar biasa."
+          </p>
+          <h4>- Andi, Freelancer</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Message Form -->
+    <section class="contact-section">
+      <h2 class="section-title">Hubungi Kami</h2>
+      <p class="section-subtitle">
+        Kami siap membantu Anda. Silakan isi formulir di bawah ini.
+      </p>
+
+      <form class="contact-form" onsubmit="return validateForm()">
+        <div class="form-group">
+          <label for="name">Nama Lengkap</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Masukkan nama Anda"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dob">Tanggal Lahir</label>
+          <input type="date" id="dob" name="dob" required />
+        </div>
+        <div class="form-group">
+          <label for="gender">Jenis Kelamin</label>
+          <select id="gender" name="gender" required>
+            <option value="">-- Pilih --</option>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Pesan Anda</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            placeholder="Tulis pesan Anda di sini"
+          ></textarea>
+        </div>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+    </section>
+    <footer class="op-footer">
+      <p>&copy; 2025 Digital Kreatif Nusantara</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
